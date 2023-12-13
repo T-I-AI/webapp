@@ -2,37 +2,106 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  /*height: 40vmin;
+  pointer-events: none;*/
+  /*position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 150px;
+  transition: 0.4s;*/
+  float:left;
+  top: -88px;
+  left: -30px;
+  height: 35vmin;
+  position: relative;
+  transition: 0.4s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon {
+  /*height: 40vmin;
+  pointer-events: none;*/
+  /*position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 150px;
+  transition: 0.4s;*/
+  float:left;
+  top: 5.7px;
+  left: -217px;
+  height: 4.2vmin;
+  position: relative;
+  transition: 0.4s;
 }
 
-.App-header {
-  background-color: #282c34;
+#navbar {
+  overflow: hidden;
+  background-color: #f3f3f3;
+  transition: 0.4s;
+  position: fixed; /*static,relative, absolute,sticky, fixed*/
+  width: 100%;
+  height: 40px;
+  top:0px;
+}
+
+#navbar a {
+  
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px; 
+  line-height: 20px;
+  border-radius: 3px;
+}
+
+#navbar a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#navbar-left {
+  float: left;
+}
+
+#navbar-right {
+  float: right;
+}
+
+.header {
+  background-color: #f3f3f3;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.parallax {
+
+  /* Set a specific height */ 
+  height: 70vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.parallax1 {
+
+  /* Set a specific height */
+  height: 70vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  height: 3000px;
+  background: linear-gradient(180deg, #ffffff 10%, #dbdbdb 45%, #8a8a8a 75%);
 }
